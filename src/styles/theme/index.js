@@ -1,6 +1,6 @@
-export const theme: Theme = {
+export const theme = {
   colors: {
-    buttonColor: '#9113AC',
+    colorButton: '#9113AC',
     textWhite: '#FFFFFF',
   },
 };
