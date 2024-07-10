@@ -6,6 +6,7 @@ export const Container = styled.main`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 `;
 
 export const Polygon = styled.div`
@@ -17,11 +18,11 @@ export const Polygon = styled.div`
   background: linear-gradient(to bottom, #e390f4 0%, #bc07e2 100%);
   clip-path: polygon(
     0 0,
-    calc(100% - 40px) 0,
-    100% 40px,
+    calc(100% - 60px) 0,
+    100% 60px,
     100% 100%,
-    40px 100%,
-    0 calc(100% - 40px)
+    60px 100%,
+    0 calc(100% - 60px)
   );
 `;
 
@@ -29,27 +30,33 @@ export const ContainerForm = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 10px;
   border-radius: 10px;
   background: linear-gradient(to bottom, #03010c, #291947);
   clip-path: polygon(
     0 0,
-    calc(100% - 40px) 0,
-    100% 40px,
+    calc(100% - 60px) 0,
+    100% 60px,
     100% 100%,
-    40px 100%,
-    0 calc(100% - 40px)
+    60px 100%,
+    0 calc(100% - 60px)
   );
-  padding: 50px 100px;
+  padding: 60px;
 `;
 
 export const Title = styled.p`
+  text-align: center;
   font-size: 2em;
   font-weight: 700;
   color: ${({ theme }) => theme.colors.textWhite};
 `;
 
 export const Text = styled.p`
-  font-size: 2em;
-  font-weight: 700;
-  color: ${({ theme }) => theme.colors.textWhite};
+  max-width: 300px;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 24px;
+  color: ${({ theme }) => theme.colors.translucentWhite};
 `;

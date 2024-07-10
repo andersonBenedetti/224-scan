@@ -4,18 +4,15 @@ import Logo from '@/components/common/Logo';
 
 import { Container, Polygon, ContainerForm, Title, Text } from './styles';
 
-export default function LoginForm() {
+export default function LoginForm({ title, text, children }) {
   return (
     <Container>
       <Logo />
       <Polygon>
         <ContainerForm>
-          <Title>
-            <Translator path="signIn.message" />
-          </Title>
-          <Text>
-            <Translator path="signIn.text" />
-          </Text>
+          <Title>{title}</Title>
+          <Text>{text}</Text>
+          {children}
         </ContainerForm>
       </Polygon>
     </Container>
