@@ -1,4 +1,7 @@
-import { Container, Input, Label } from './styles';
+import { useState } from 'react';
+import { FaEyeSlash, FaEye } from 'react-icons/fa';
+
+import { Container, ContainerInput, Input, Label, IconWrapper } from './styles';
 
 export default function FormField({
   type = 'text',
@@ -9,17 +12,30 @@ export default function FormField({
   id,
   required = false,
 }) {
+  const [showPassword, setShowPassword] = useState(false);
+
+  const togglePasswordVisibility = () => {
+    setShowPassword(prevState => !prevState);
+  };
+
   return (
     <Container>
       <Label htmlFor={id}>{label}</Label>
-      <Input
-        type={type}
-        id={id}
-        placeholder={placeholder}
-        value={value}
-        onChange={onChange}
-        required={required}
-      />
+      <ContainerInput>
+        <Input
+          type={type === 'password' && showPassword ? 'text' : type}
+          id={id}
+          placeholder={placeholder}
+          value={value}
+          onChange={onChange}
+          required={required}
+        />
+        {type === 'password' && (
+          <IconWrapper onClick={togglePasswordVisibility}>
+            {showPassword ? <FaEyeSlash /> : <FaEye />}
+          </IconWrapper>
+        )}
+      </ContainerInput>
     </Container>
   );
 }

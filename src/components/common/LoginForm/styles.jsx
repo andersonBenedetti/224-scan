@@ -7,6 +7,10 @@ export const Container = styled.main`
   justify-content: center;
   align-items: center;
   padding: 10px;
+
+  button {
+    margin-top: 10px;
+  }
 `;
 
 export const Polygon = styled.div`
@@ -42,7 +46,7 @@ export const ContainerForm = styled.div`
     60px 100%,
     0 calc(100% - 60px)
   );
-  padding: 60px;
+  padding: 80px;
 `;
 
 export const Title = styled.p`

@@ -4,6 +4,7 @@ export const Container = styled.button`
   width: 100%;
   height: 48px;
   background-color: ${({ theme }) => theme.colors.colorButton};
+  border: 0;
   border-radius: 5px;
   color: ${({ theme }) => theme.colors.textWhite};
   font-size: 0.875em;

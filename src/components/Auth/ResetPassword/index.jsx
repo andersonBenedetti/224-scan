@@ -5,42 +5,42 @@ import LoginForm from '@/components/common/LoginForm';
 import FormField from '@/components/common/FormField';
 import Button from '@/components/common/Button';
 
-import { Form, ButtonBottom } from './styles';
+import { Form } from './styles';
 
-export default function SignIn() {
-  const [email, setEmail] = useState('');
+export default function ResetPassword() {
   const [password, setPassword] = useState('');
-
-  const handleEmailChange = e => {
-    setEmail(e.target.value);
-  };
+  const [confirmPassword, setConfirmPassword] = useState('');
 
   const handlePasswordChange = e => {
     setPassword(e.target.value);
   };
 
+  const handleConfirmPasswordChange = e => {
+    setConfirmPassword(e.target.value);
+  };
+
   const handleSubmit = e => {
     e.preventDefault();
-    console.log('Email:', email);
+    console.log('Confirm Password:', confirmPassword);
     console.log('Password:', password);
   };
 
   return (
     <>
       <LoginForm
-        title={<Translator path="signIn.message" />}
-        text={<Translator path="signIn.text" />}>
+        title={<Translator path="resetPassword.message" />}
+        text={<Translator path="resetPassword.text" />}>
         <Form onSubmit={handleSubmit}>
           <FormField
-            label={<Translator path="signIn.email" />}
-            type="email"
-            value={email}
-            onChange={handleEmailChange}
-            id="email"
+            label={<Translator path="resetPassword.password" />}
+            type="password"
+            value={confirmPassword}
+            onChange={handleConfirmPasswordChange}
+            id="confirmPassword"
             required
           />
           <FormField
-            label={<Translator path="signIn.password" />}
+            label={<Translator path="resetPassword.confirmPassword" />}
             type="password"
             value={password}
             onChange={handlePasswordChange}
@@ -48,12 +48,9 @@ export default function SignIn() {
             required
           />
           <Button
-            textButton={<Translator path="signIn.button" />}
+            textButton={<Translator path="resetPassword.button" />}
             onClick={handleSubmit}
           />
-          <ButtonBottom href="#">
-            <Translator path="signIn.passwordRecovery" />
-          </ButtonBottom>
         </Form>
       </LoginForm>
     </>
