@@ -1,5 +1,3 @@
-import Translator from '@/components/i18n/Translator';
-
 import Logo from '@/components/common/Logo';
 
 import { Container, Polygon, ContainerForm, Title, Text } from './styles';
