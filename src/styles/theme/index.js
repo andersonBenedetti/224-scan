@@ -5,6 +5,7 @@ export const theme = {
     translucentWhite: '#FFFFFF82',
     colorInput: '#858E9F',
     textLink: '#808080',
+    backgroundDashboard: '#12101a',
   },
 };
 

@@ -6,6 +6,7 @@ import SignIn from './pages/Auth/SignIn';
 import PasswordRecovery from './pages/Auth/PasswordRecovery';
 import VerificationKey from './pages/Auth/VerificationKey';
 import ResetPassword from './pages/Auth/ResetPassword';
+import Dashboard from './pages/Dashboard';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/password-recovery" element={<PasswordRecovery />} />
         <Route path="/verification-key" element={<VerificationKey />} />
         <Route path="/reset-password" element={<ResetPassword />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </Router>
   );
