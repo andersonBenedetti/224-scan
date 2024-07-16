@@ -16,9 +16,11 @@ export default function Exams() {
   return (
     <Container>
       <SearchInput
+        label={t('exams.search.label')}
+        id="filter"
         value={searchValue}
         onChange={handleSearchChange}
-        placeholder={t('exams.searchPlaceholder')}
+        placeholder={t('exams.search.placeholder')}
       />
     </Container>
   );

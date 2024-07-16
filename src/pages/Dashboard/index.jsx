@@ -1,3 +1,4 @@
+import Header from '@/components/common/Header';
 import Tabs from '@/components/common/Tabs';
 import Exams from './Exams';
 import Logs from './Logs';
@@ -12,6 +13,7 @@ const tabsData = [
 export default function Dashboard() {
   return (
     <Container>
+      <Header />
       <Tabs tabs={tabsData} />
     </Container>
   );

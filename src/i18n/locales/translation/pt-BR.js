@@ -43,4 +43,14 @@ export default {
     confirmPassword: 'Confirmar Senha',
     button: 'Enviar',
   },
+  header: {
+    title: 'Clínica Médica Dr Roberto',
+    status: 'Status Servidor',
+  },
+  exams: {
+    search: {
+      label: 'Filtro',
+      placeholder: 'Pesquise',
+    },
+  },
 };

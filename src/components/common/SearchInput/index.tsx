@@ -1,18 +1,26 @@
 import { SearchIcon } from '@/components/icons/SearchIcon';
-import { Container, Input, IconWrapper } from './styles';
+import { Container, ContainerInput, Label, Input } from './styles';
 
-export default function SearchInput({ value, onChange, placeholder }) {
+export default function SearchInput({
+  label,
+  id,
+  value,
+  onChange,
+  placeholder,
+}) {
   return (
     <Container>
-      <Input
-        type="text"
-        placeholder={placeholder}
-        value={value}
-        onChange={e => onChange(e.target.value)}
-      />
-      <IconWrapper>
+      <Label htmlFor={id}>{label}</Label>
+      <ContainerInput>
+        <Input
+          id={id}
+          type="text"
+          placeholder={placeholder}
+          value={value}
+          onChange={e => onChange(e.target.value)}
+        />
         <SearchIcon />
-      </IconWrapper>
+      </ContainerInput>
     </Container>
   );
 }
