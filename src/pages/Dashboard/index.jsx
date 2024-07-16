@@ -1,6 +1,6 @@
 import Tabs from '@/components/common/Tabs';
-import Exams from '@/components/common/Exams';
-import Logs from '@/components/common/Logs';
+import Exams from './Exams';
+import Logs from './Logs';
 
 import { Container } from './styles';
 

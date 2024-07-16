@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Translator from '@/components/i18n/Translator';
+import { useTranslation } from 'react-i18next';
 
 import LoginForm from '@/components/common/LoginForm';
 import FormField from '@/components/common/FormField';
@@ -8,6 +8,8 @@ import Button from '@/components/common/Button';
 import { Form } from './styles';
 
 export default function PasswordRecovery() {
+  const { t } = useTranslation();
+
   const [email, setEmail] = useState('');
 
   const handleEmailChange = e => {
@@ -22,11 +24,11 @@ export default function PasswordRecovery() {
   return (
     <>
       <LoginForm
-        title={<Translator path="passwordRecovery.message" />}
-        text={<Translator path="passwordRecovery.text" />}>
+        title={t('passwordRecovery.message')}
+        text={t('passwordRecovery.text')}>
         <Form onSubmit={handleSubmit}>
           <FormField
-            label={<Translator path="passwordRecovery.email" />}
+            label={t('passwordRecovery.email')}
             type="email"
             value={email}
             onChange={handleEmailChange}
@@ -34,7 +36,7 @@ export default function PasswordRecovery() {
             required
           />
           <Button
-            textButton={<Translator path="passwordRecovery.button" />}
+            textButton={t('passwordRecovery.button')}
             onClick={handleSubmit}
           />
         </Form>

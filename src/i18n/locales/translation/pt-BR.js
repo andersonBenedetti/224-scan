@@ -12,6 +12,17 @@ export default {
     button: 'Entrar',
     passwordRecovery: 'Esqueceu a senha?',
   },
+  signUp: {
+    message: 'Bem-vindo!',
+    text: 'Para acessar o sistema, por favor informe seu e-mail e senha.',
+    name: 'Nome da Clínica',
+    email: 'E-mail',
+    region: 'Região',
+    timezone: 'Timezone',
+    password: 'Senha',
+    button: 'Cadastrar',
+    back: 'Voltar ao login',
+  },
   passwordRecovery: {
     message: 'Esqueceu a senha?',
     text: 'Enviaremos para o seu e-mail o código de verificação para redefinir sua senha.',

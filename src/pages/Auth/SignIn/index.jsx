@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Translator from '@/components/i18n/Translator';
+import { useTranslation } from 'react-i18next';
 
 import LoginForm from '@/components/common/LoginForm';
 import FormField from '@/components/common/FormField';
@@ -8,6 +8,8 @@ import Button from '@/components/common/Button';
 import { Form, ButtonBottom } from './styles';
 
 export default function SignIn() {
+  const { t } = useTranslation();
+
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -27,12 +29,10 @@ export default function SignIn() {
 
   return (
     <>
-      <LoginForm
-        title={<Translator path="signIn.message" />}
-        text={<Translator path="signIn.text" />}>
+      <LoginForm title={t('signIn.message')} text={t('signIn.text')}>
         <Form onSubmit={handleSubmit}>
           <FormField
-            label={<Translator path="signIn.email" />}
+            label={t('signIn.email')}
             type="email"
             value={email}
             onChange={handleEmailChange}
@@ -40,20 +40,15 @@ export default function SignIn() {
             required
           />
           <FormField
-            label={<Translator path="signIn.password" />}
+            label={t('signIn.password')}
             type="password"
             value={password}
             onChange={handlePasswordChange}
             id="password"
             required
           />
-          <Button
-            textButton={<Translator path="signIn.button" />}
-            onClick={handleSubmit}
-          />
-          <ButtonBottom href="#">
-            <Translator path="signIn.passwordRecovery" />
-          </ButtonBottom>
+          <Button textButton={t('signIn.button')} onClick={handleSubmit} />
+          <ButtonBottom href="#">{t('signIn.passwordRecovery')}</ButtonBottom>
         </Form>
       </LoginForm>
     </>
