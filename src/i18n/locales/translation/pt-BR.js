@@ -75,9 +75,44 @@ export default {
   },
   logs: {
     title: 'Logs de erro',
-    search: {
-      label: 'Filtros',
-      placeholder: 'Pesquise',
+    table: {
+      name: 'Nome do DICOM',
+      reason: 'Motivo',
+      action: 'Ação',
+      users: {
+        1: {
+          name: 'Bianca Gonçalves da Rosa Mastella',
+          cod: 'LHSMOD42019',
+          reason: 'A comunicação com o servidor falhou',
+          button: 'Tentar novamente',
+        },
+        2: {
+          name: 'Bianca Gonçalves da Rosa Mastella',
+          cod: 'LHSMOD42019',
+          reason: 'A comunicação com o servidor falhouExame enviado!',
+          button: 'Tentar novamente',
+        },
+      },
+    },
+  },
+  settings: {
+    menu: {
+      branch: 'Branch',
+      dicomServer: 'Dicom/Server',
+      internet: 'Internet',
+      logOut: 'Log out',
+    },
+    branch: {
+      title: 'Configurações Branch',
+      name: 'Oncologia Unidade Criciúma',
+      text: 'Descrição da Branch Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
+      status: 'Ativa',
+      language: 'Português (BR)',
+      buttonEdit: 'Editar',
+      inputName: 'Nome da branch',
+      inputDescription: 'Nome da branch',
+      buttonCancel: 'Cancelar',
+      buttonSave: 'Salvar alterações',
     },
   },
 };

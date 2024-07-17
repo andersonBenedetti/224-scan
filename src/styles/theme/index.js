@@ -7,6 +7,7 @@ export const theme = {
     textLink: '#808080',
     backgroundDashboard: '#12101a',
     borderTable: '#302C40',
+    background: '#12101A',
   },
 };
 
