@@ -48,8 +48,16 @@ export default {
     status: 'Status Servidor',
   },
   exams: {
+    title: 'Exames',
     search: {
-      label: 'Filtro',
+      label: 'Filtros',
+      placeholder: 'Pesquise',
+    },
+  },
+  logs: {
+    title: 'Logs de erro',
+    search: {
+      label: 'Filtros',
       placeholder: 'Pesquise',
     },
   },

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { Container, Nav, Item, Content } from './styles';
+import { Container, Nav, Item, Text, Content } from './styles';
 
 export default function Tabs({ tabs }) {
   const [activeTab, setActiveTab] = useState(tabs[0].title);
@@ -17,7 +17,7 @@ export default function Tabs({ tabs }) {
             key={tab.title}
             className={activeTab === tab.title ? 'active' : ''}
             onClick={() => handleTabClick(tab.title)}>
-            {tab.title}
+            <Text>{tab.title}</Text>
           </Item>
         ))}
       </Nav>
