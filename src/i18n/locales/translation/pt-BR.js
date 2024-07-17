@@ -53,6 +53,25 @@ export default {
       label: 'Filtros',
       placeholder: 'Pesquise',
     },
+    table: {
+      name: 'Nome do paciente',
+      status: 'Envio servidor',
+      infos: 'Laudo',
+      users: {
+        1: {
+          name: 'Bianca Gonçalves da Rosa Mastella',
+          cod: 'LHSMOD42019',
+          status: 'Exame sendo enviado',
+          info: 'Aguardando',
+        },
+        2: {
+          name: 'Bianca Gonçalves da Rosa Mastella',
+          cod: 'LHSMOD42019',
+          status: 'Exame enviado!',
+          info: 'Laudo finalizado!',
+        },
+      },
+    },
   },
   logs: {
     title: 'Logs de erro',

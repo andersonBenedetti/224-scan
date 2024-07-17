@@ -6,6 +6,7 @@ export const theme = {
     colorInput: '#858E9F',
     textLink: '#808080',
     backgroundDashboard: '#12101a',
+    borderTable: '#302C40',
   },
 };
 

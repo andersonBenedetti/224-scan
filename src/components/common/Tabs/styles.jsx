@@ -61,5 +61,5 @@ export const Content = styled.div`
   border: 2px solid;
   border-color: ${({ theme }) => theme.colors.colorButton};
   border-radius: 0px 10px 10px 10px;
-  padding: 20px 10px;
+  padding: 20px 0;
 `;
