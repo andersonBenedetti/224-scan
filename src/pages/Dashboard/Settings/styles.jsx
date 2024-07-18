@@ -13,6 +13,7 @@ export const Menu = styled.div`
   justify-content: space-between;
   gap: 40px;
   padding: 0 20px;
+  z-index: 99;
 `;
 
 export const Options = styled.ul`

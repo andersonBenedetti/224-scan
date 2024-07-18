@@ -5,6 +5,7 @@ import {
   Container,
   ContainerInput,
   Input,
+  TextArea,
   Label,
   IconWrapper,
   Select,
@@ -23,8 +24,10 @@ export default function FormField({
   const [showPassword, setShowPassword] = useState(false);
 
   const togglePasswordVisibility = () => {
-    setShowPassword(prevState => !prevState);
+    setShowPassword(prev => !prev);
   };
+
+  const InputComponent = type === 'textarea' ? TextArea : Input;
 
   return (
     <Container>
@@ -40,7 +43,7 @@ export default function FormField({
           </Select>
         ) : (
           <>
-            <Input
+            <InputComponent
               type={type === 'password' && showPassword ? 'text' : type}
               id={id}
               placeholder={placeholder}
