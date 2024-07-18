@@ -12,6 +12,12 @@ export const Title = styled.p`
   color: ${({ theme }) => theme.colors.textWhite};
 `;
 
+export const ContentBranch = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+`;
+
 export const Content = styled.div`
   width: 80%;
   display: flex;
