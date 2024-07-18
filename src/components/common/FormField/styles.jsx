@@ -34,6 +34,26 @@ export const Input = styled.input`
   }
 `;
 
+export const TextArea = styled.textarea`
+  width: 100%;
+  min-height: 150px;
+  resize: none;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid;
+  border-color: ${({ theme }) => theme.colors.colorInput};
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 0.875em;
+  font-weight: 400;
+  color: ${({ theme }) => theme.colors.colorInput};
+
+  &:focus {
+    border-color: ${({ theme }) => theme.colors.textWhite};
+    outline: none;
+  }
+`;
+
 export const IconWrapper = styled.span`
   position: absolute;
   right: 10px;
