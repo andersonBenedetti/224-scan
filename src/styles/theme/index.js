@@ -8,6 +8,8 @@ export const theme = {
     backgroundDashboard: '#12101a',
     borderTable: '#302C40',
     background: '#12101A',
+    backgroundSettings: '#00000082',
+    status: '#00FF38',
   },
 };
 

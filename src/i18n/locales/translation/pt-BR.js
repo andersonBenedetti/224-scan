@@ -96,6 +96,7 @@ export default {
     },
   },
   settings: {
+    title: 'Configurações',
     menu: {
       branch: 'Branch',
       dicomServer: 'Dicom/Server',

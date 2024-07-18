@@ -62,4 +62,5 @@ export const Content = styled.div`
   border-color: ${({ theme }) => theme.colors.colorButton};
   border-radius: 0px 10px 10px 10px;
   padding: 20px 0;
+  min-height: 65vh;
 `;
