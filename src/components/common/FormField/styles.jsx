@@ -29,6 +29,7 @@ export const Input = styled.input`
   color: ${({ theme }) => theme.colors.colorInput};
 
   &:focus {
+    background-color: ${({ theme }) => theme.colors.backgroundDashboard};
     border-color: ${({ theme }) => theme.colors.textWhite};
     outline: none;
   }
@@ -49,6 +50,7 @@ export const TextArea = styled.textarea`
   color: ${({ theme }) => theme.colors.colorInput};
 
   &:focus {
+    background-color: ${({ theme }) => theme.colors.backgroundDashboard};
     border-color: ${({ theme }) => theme.colors.textWhite};
     outline: none;
   }
