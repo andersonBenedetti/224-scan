@@ -117,5 +117,22 @@ export default {
       buttonCancel: 'Cancelar',
       buttonSave: 'Salvar alterações',
     },
+    dicomServer: {
+      label: 'Cole aqui a sua String',
+      button: 'Salvar',
+    },
+    internet: {
+      titleIPv6: 'Configuração IPv6',
+      labelIP: 'IPv6 address',
+      labelSubnet: 'Subnet prefix length',
+      labelGateway: 'Default gateway',
+      titleDNS: 'DNS Server addresses',
+      labelDNS: 'Preferred DNS server',
+      labelAlternate: 'Alternate DNS server',
+      titleProxy: 'Configure Internet proxy',
+      labelUser: 'User name',
+      labelPassword: 'Password',
+      button: 'Salvar alterações',
+    },
   },
 };
