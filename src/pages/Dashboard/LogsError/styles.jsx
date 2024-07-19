@@ -33,6 +33,5 @@ export const Reason = styled.p`
   width: 150px;
   font-size: 0.75em;
   font-weight: 400;
-  color: ${({ theme }) => theme.colors.textWhite};
-  opacity: 0.8;
+  color: ${({ theme }) => theme.colors.whiteOpacity};
 `;

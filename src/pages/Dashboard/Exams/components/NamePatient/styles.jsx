@@ -15,6 +15,5 @@ export const Title = styled.p`
 export const Cod = styled.p`
   font-size: 1em;
   font-weight: 400;
-  color: ${({ theme }) => theme.colors.textWhite};
-  opacity: 0.8;
+  color: ${({ theme }) => theme.colors.whiteOpacity};
 `;

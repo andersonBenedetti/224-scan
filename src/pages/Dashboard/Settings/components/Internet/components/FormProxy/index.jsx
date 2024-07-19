@@ -49,12 +49,13 @@ export default function FormProxy() {
           />
         </Top>
         <Button
-          textButton={<span>{t('settings.internet.button')}</span>}
+          textButton={t('settings.internet.button')}
           onClick={handleSubmit}
           customStyles={{
             width: '153px',
             height: '37px',
-            background: `linear-gradient(to right, #25a340, #1120ac)`,
+            background: `linear-gradient(#12101a, #12101a) padding-box, linear-gradient(to right, #09B250, #09B250, #10467B) border-box`,
+            border: '1px solid transparent',
           }}
         />
       </Form>

@@ -1,9 +1,8 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 export const Container = styled.button`
   width: 100%;
   height: 48px;
-  background-color: ${({ theme }) => theme.colors.colorButton};
   border: 0;
   border-radius: 5px;
   color: ${({ theme }) => theme.colors.textWhite};
@@ -12,13 +11,20 @@ export const Container = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: transform 0.3s ease;
   cursor: pointer;
   padding: 1.5px;
+  background-size: 200% auto;
+  overflow: hidden;
+  background-image: linear-gradient(
+    to right,
+    #c833e8 0%,
+    #c833e8 51%,
+    #8f01ae 100%
+  );
+  transition: all 0.5s ease-in;
 
   &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-position: right center;
   }
 
   span {

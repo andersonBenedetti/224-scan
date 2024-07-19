@@ -28,7 +28,7 @@ export const LineFull = styled.line`
 `;
 
 export const ProgressDetailsContainer = styled.div`
-  color: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.colors.whiteOpacity};
   font-size: 0.75em;
   font-weight: 400;
 `;

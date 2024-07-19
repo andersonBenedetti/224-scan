@@ -10,6 +10,7 @@ export const theme = {
     background: '#12101A',
     backgroundSettings: '#00000082',
     status: '#00FF38',
+    whiteOpacity: '#D0CFD1',
   },
 };
 

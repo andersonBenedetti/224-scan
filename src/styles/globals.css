@@ -14,7 +14,7 @@
 
 html,
 body {
-  height: 100%;
+  min-height: 100vh;
 }
 
 html {
@@ -26,6 +26,7 @@ img {
 }
 
 body {
+  background: #00000082;
   background-image: url('/fundo.png');
   background-size: cover;
   background-position: center;

@@ -14,7 +14,7 @@ export const Nav = styled.ul`
 
 export const Item = styled.li`
   background-color: transparent;
-  padding: 1.5px 1.5px 0 1.5px;
+  padding: 1.5px 1.6px 0 1.5px;
   border-radius: 5px 5px 0 0;
   cursor: pointer;
   clip-path: polygon(
@@ -41,9 +41,9 @@ export const Item = styled.li`
 export const Text = styled.span`
   display: block;
   background-color: ${({ theme }) => theme.colors.backgroundDashboard};
-  padding: 5px 10px 10px 10px;
+  padding: 10px 15px 15px 15px;
   border-radius: 5px 5px 0 0;
-  font-size: 1em;
+  font-size: 0.875em;
   font-weight: 400;
   clip-path: polygon(
     0 0,
@@ -53,7 +53,6 @@ export const Text = styled.span`
     0 100%,
     0 0
   );
-  margin-bottom: -2px;
 `;
 
 export const Content = styled.div`

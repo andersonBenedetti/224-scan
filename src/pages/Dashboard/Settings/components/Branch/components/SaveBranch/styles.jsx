@@ -31,4 +31,20 @@ export const ContainerInputs = styled.div`
 export const ContainerButtons = styled.div`
   display: flex;
   gap: 10px;
+
+  a {
+    border: 1px solid;
+    border-color: ${({ theme }) => theme.colors.textWhite};
+    background-image: none;
+
+    &:hover {
+      border: none;
+      background-image: linear-gradient(
+        to right,
+        #c833e8 0%,
+        #c833e8 51%,
+        #8f01ae 100%
+      );
+    }
+  }
 `;

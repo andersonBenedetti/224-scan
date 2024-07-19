@@ -21,6 +21,7 @@ export const Form = styled.form`
 export const Top = styled.div`
   display: flex;
   gap: 20px;
+  margin-bottom: 30px;
 
   div:nth-of-type(1),
   div:nth-of-type(3) {

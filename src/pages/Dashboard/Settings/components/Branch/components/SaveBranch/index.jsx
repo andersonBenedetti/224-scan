@@ -94,17 +94,16 @@ export default function SaveBranch() {
           customStyles={{
             width: '100px',
             height: '37px',
-            backgroundColor: 'transparent',
-            border: `1px solid ${theme.colors.textWhite}`,
           }}
         />
         <Button
-          textButton={<span>{t('settings.branch.buttonSave')}</span>}
+          textButton={t('settings.branch.buttonSave')}
           onClick={handleSubmit}
           customStyles={{
             width: '153px',
             height: '37px',
-            background: `linear-gradient(to right, #25a340, #1120ac)`,
+            background: `linear-gradient(#12101a, #12101a) padding-box, linear-gradient(to right, #09B250, #09B250, #10467B) border-box`,
+            border: '1px solid transparent',
           }}
         />
       </ContainerButtons>

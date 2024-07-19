@@ -47,6 +47,10 @@ export const ContainerForm = styled.div`
     0 calc(100% - 60px)
   );
   padding: 80px;
+
+  @media (max-width: 768px) {
+    padding: 50px;
+  }
 `;
 
 export const Title = styled.p`

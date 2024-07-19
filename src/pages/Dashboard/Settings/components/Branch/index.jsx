@@ -40,12 +40,13 @@ export default function Branch() {
             <Language>{t('settings.branch.language')}</Language>
           </Content>
           <Button
-            textButton={<span>{t('settings.branch.buttonEdit')}</span>}
+            textButton={t('settings.branch.buttonEdit')}
             onClick={handleButtonClick}
             customStyles={{
               width: '79px',
               height: '37px',
-              background: `linear-gradient(to right, #25a340, #1120ac)`,
+              background: `linear-gradient(#12101a, #12101a) padding-box, linear-gradient(to right, #09B250, #09B250, #10467B) border-box`,
+              border: '1px solid transparent',
             }}
           />
         </ContentBranch>

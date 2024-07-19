@@ -1,5 +1,25 @@
 import styled from 'styled-components';
 
+export const Container = styled.div`
+  width: 100%;
+
+  div > a {
+    border: 1px solid;
+    border-color: ${({ theme }) => theme.colors.textWhite};
+    background-image: none;
+
+    &:hover {
+      border: none;
+      background-image: linear-gradient(
+        to right,
+        #c833e8 0%,
+        #c833e8 51%,
+        #8f01ae 100%
+      );
+    }
+  }
+`;
+
 export const Form = styled.form`
   width: 100%;
   display: flex;

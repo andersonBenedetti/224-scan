@@ -41,8 +41,7 @@ export const Name = styled.p`
 export const Text = styled.p`
   font-size: 0.75em;
   font-weight: 400;
-  color: ${({ theme }) => theme.colors.textWhite};
-  opacity: 0.8;
+  color: ${({ theme }) => theme.colors.whiteOpacity};
 `;
 
 export const Status = styled.p`
