@@ -10,7 +10,9 @@ export default {
     email: 'E-mail',
     password: 'Senha',
     button: 'Entrar',
+    buttonRegister: 'Cadastre-se',
     passwordRecovery: 'Esqueceu a senha?',
+    or: 'ou',
   },
   signUp: {
     message: 'Bem-vindo!',

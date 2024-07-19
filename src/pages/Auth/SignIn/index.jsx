@@ -1,14 +1,17 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useTheme } from 'styled-components';
 
 import LoginForm from '@/components/common/LoginForm';
 import FormField from '@/components/common/FormField';
 import Button from '@/components/common/Button';
 
-import { Form, ButtonBottom } from './styles';
+import { Form, ButtonBottom, Text } from './styles';
 
 export default function SignIn() {
   const { t } = useTranslation();
+
+  const theme = useTheme();
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -47,9 +50,18 @@ export default function SignIn() {
             id="password"
             required
           />
-          <Button textButton={t('signIn.button')} onClick={handleSubmit} />
           <ButtonBottom href="#">{t('signIn.passwordRecovery')}</ButtonBottom>
+          <Button textButton={t('signIn.button')} onClick={handleSubmit} />
         </Form>
+        <Text>{t('signIn.or')}</Text>
+        <Button
+          textButton={t('signIn.buttonRegister')}
+          href=""
+          customStyles={{
+            backgroundColor: 'transparent',
+            border: `1px solid ${theme.colors.textWhite}`,
+          }}
+        />
       </LoginForm>
     </>
   );
