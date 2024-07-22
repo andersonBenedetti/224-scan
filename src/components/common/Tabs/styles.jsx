@@ -14,7 +14,7 @@ export const Nav = styled.ul`
 
 export const Item = styled.li`
   background-color: transparent;
-  padding: 1.5px 1.6px 0 1.5px;
+  padding: 1.5px 1.5px 0 1.5px;
   border-radius: 5px 5px 0 0;
   cursor: pointer;
   clip-path: polygon(
@@ -34,6 +34,8 @@ export const Item = styled.li`
 
     span {
       font-weight: 600;
+      border-bottom: 2px solid;
+      border-color: ${({ theme }) => theme.colors.backgroundDashboard};
     }
   }
 `;
@@ -41,7 +43,7 @@ export const Item = styled.li`
 export const Text = styled.span`
   display: block;
   background-color: ${({ theme }) => theme.colors.backgroundDashboard};
-  padding: 10px 15px 15px 15px;
+  padding: 10px 20px 10px 20px;
   border-radius: 5px 5px 0 0;
   font-size: 0.875em;
   font-weight: 400;
