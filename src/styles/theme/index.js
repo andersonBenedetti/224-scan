@@ -11,6 +11,8 @@ export const theme = {
     backgroundSettings: '#00000082',
     status: '#00FF38',
     whiteOpacity: '#D0CFD1',
+    off_progress: '#302C40',
+    error: '#FF0000',
   },
 };
 
