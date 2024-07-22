@@ -1,6 +1,13 @@
 import { Container } from './styles';
 
-export default function Button({ textButton, customStyles, onClick, href }) {
+export default function Button({
+  textButton,
+  customStyles,
+  onClick,
+  href,
+  className,
+  bordered = false,
+}) {
   const isLink = Boolean(href);
 
   return (
@@ -8,7 +15,8 @@ export default function Button({ textButton, customStyles, onClick, href }) {
       as={isLink ? 'a' : 'button'}
       href={href}
       onClick={onClick}
-      style={customStyles}>
+      style={customStyles}
+      className={`${className} ${bordered ? 'bordered' : ''}`}>
       {textButton}
     </Container>
   );

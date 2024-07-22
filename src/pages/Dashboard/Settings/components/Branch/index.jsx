@@ -45,9 +45,8 @@ export default function Branch() {
             customStyles={{
               width: '79px',
               height: '37px',
-              background: `linear-gradient(#12101a, #12101a) padding-box, linear-gradient(to right, #09B250, #09B250, #10467B) border-box`,
-              border: '1px solid transparent',
             }}
+            bordered
           />
         </ContentBranch>
       )}

@@ -15,4 +15,8 @@ export const ButtonBottom = styled.a`
   color: ${({ theme }) => theme.colors.textLink};
   text-align: center;
   text-decoration: underline;
+
+  &:hover {
+    color: ${({ theme }) => theme.colors.whiteOpacity};
+  }
 `;

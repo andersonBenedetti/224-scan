@@ -27,13 +27,21 @@ export const Container = styled.button`
     background-position: right center;
   }
 
-  span {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: ${({ theme }) => theme.colors.background};
-    border-radius: 5px;
+  &.bordered {
+    background: linear-gradient(#12101a, #12101a) padding-box,
+      linear-gradient(to right, #09b250, #09b250, #10467b) border-box;
+    border: 1px solid transparent;
+    background-size: 200% auto;
+
+    &:hover {
+      background-image: linear-gradient(
+        to right,
+        #09b250 0%,
+        #09b250 51%,
+        #10467b 100%
+      );
+      border: transparent;
+      background-position: right center;
+    }
   }
 `;
