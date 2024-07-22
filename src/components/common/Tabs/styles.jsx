@@ -26,6 +26,7 @@ export const Item = styled.li`
     0 0
   );
   opacity: 0.8;
+  position: relative;
 
   &.active {
     opacity: 1;
@@ -36,6 +37,16 @@ export const Item = styled.li`
       font-weight: 600;
       border-bottom: 2px solid;
       border-color: ${({ theme }) => theme.colors.backgroundDashboard};
+    }
+
+    &::before {
+      content: '';
+      width: calc(100% - 3px);
+      height: 2px;
+      background-color: ${({ theme }) => theme.colors.backgroundDashboard};
+      position: absolute;
+      bottom: 0;
+      left: 1.5;
     }
   }
 `;
