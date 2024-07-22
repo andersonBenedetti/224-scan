@@ -12,19 +12,17 @@ export const SvgContainer = styled.svg`
   height: 7px;
 `;
 
-export const LineOff = styled.line`
-  stroke: ${({ theme }) => theme.colors.borderTable};
-  stroke-width: 70px;
-  stroke-linecap: round;
+export const RectOff = styled.rect`
+  width: 150px;
+  height: 7px;
+  fill: ${({ theme }) => theme.colors.off_progress};
 `;
 
-export const LineFull = styled.line`
-  stroke: url(#grad1);
-  stroke-width: 70px;
-  stroke-dasharray: 150px;
-  stroke-dashoffset: ${({ $progress }) => 150 - (150 * $progress) / 100};
-  transition: stroke-dashoffset 0.5s ease;
-  stroke-linecap: round;
+export const RectFull = styled.rect`
+  width: ${({ $progress }) => (($progress / 100) * 150) === 0 ? 20 : (($progress / 100) * 150)}px;
+  height: 7px;
+  fill: ${({ $progress, theme }) => $progress === 0 ? theme.colors.error : 'url(#grad2)'};
+  transition: width 0.5s ease; 
 `;
 
 export const ProgressDetailsContainer = styled.div`
