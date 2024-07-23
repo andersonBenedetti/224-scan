@@ -4,19 +4,26 @@ import { useTranslation } from 'react-i18next';
 import { SearchInput } from '@/components/common/SearchInput';
 import { NamePatient } from './components/NamePatient';
 import { ProgressRow, ProgressDetails } from '@/components/common/ProgressRow';
+import { ToggleButton } from './components/ToggleButton';
 
 import { Container, Table, Th, Tr, Td } from './styles';
 
 export const Exams = () => {
   const { t } = useTranslation();
   const [searchValue, setSearchValue] = useState('');
+  const [isToggled, setIsToggled] = useState(false);
 
   const handleSearchChange = value => {
     setSearchValue(value);
   };
 
+  const handleToggle = () => {
+    setIsToggled(!isToggled);
+  };
+
   return (
     <Container>
+      <ToggleButton checked={isToggled} onChange={handleToggle} />
       <SearchInput
         label={t('exams.search.label')}
         id="filter"

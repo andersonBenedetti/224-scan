@@ -14,6 +14,8 @@ export const theme = {
     off_progress: '#302C40',
     error: '#FF0000',
     primary: '#FFFFFF',
+    toggleButton: '#35323F',
+    toggleActive: '#25A340',
   },
 };
 
