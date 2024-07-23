@@ -1,13 +1,13 @@
 import { Container } from './styles';
 
-export default function Button({
+export const Button = ({
   textButton,
   customStyles,
   onClick,
   href,
   className,
   bordered = false,
-}) {
+}) => {
   const isLink = Boolean(href);
 
   return (
@@ -20,4 +20,4 @@ export default function Button({
       {textButton}
     </Container>
   );
-}
+};

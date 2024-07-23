@@ -1,13 +1,7 @@
 import { SearchIcon } from '@/components/icons/SearchIcon';
 import { Container, ContainerInput, Label, Input } from './styles';
 
-export default function SearchInput({
-  label,
-  id,
-  value,
-  onChange,
-  placeholder,
-}) {
+export const SearchInput = ({ label, id, value, onChange, placeholder }) => {
   return (
     <Container>
       <Label htmlFor={id}>{label}</Label>
@@ -23,4 +17,4 @@ export default function SearchInput({
       </ContainerInput>
     </Container>
   );
-}
+};

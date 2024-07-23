@@ -1,13 +1,13 @@
-import FormIP from './components/FormIP';
-import FormProxy from './components/FormProxy';
+import { FormIP } from './components/FormIP';
+import { FormProxy } from './components/FormProxy';
 
 import { Container } from './styles';
 
-export default function Internet() {
+export const Internet = () => {
   return (
     <Container>
       <FormIP />
       <FormProxy />
     </Container>
   );
-}
+};

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import Button from '@/components/common/Button';
-import SaveBranch from './components/SaveBranch';
+import { Button } from '@/components/common/Button';
+import { SaveBranch } from './components/SaveBranch';
 
 import {
   Container,
@@ -16,7 +16,7 @@ import {
   Language,
 } from './styles';
 
-export default function Branch() {
+export const Branch = () => {
   const { t } = useTranslation();
   const [showSaveBranch, setShowSaveBranch] = useState(false);
 
@@ -52,4 +52,4 @@ export default function Branch() {
       )}
     </Container>
   );
-}
+};

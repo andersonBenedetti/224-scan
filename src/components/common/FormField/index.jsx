@@ -11,7 +11,7 @@ import {
   Select,
 } from './styles';
 
-export default function FormField({
+export const FormField = ({
   type = 'text',
   placeholder = '',
   value,
@@ -20,7 +20,7 @@ export default function FormField({
   id,
   required = false,
   options = [],
-}) {
+}) => {
   const [showPassword, setShowPassword] = useState(false);
 
   const togglePasswordVisibility = () => {
@@ -61,4 +61,4 @@ export default function FormField({
       </ContainerInput>
     </Container>
   );
-}
+};

@@ -1,13 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import AccessLogin from './pages/Auth/AccessLogin';
-import SignIn from './pages/Auth/SignIn';
-import SignUp from './pages/Auth/SignUp';
-import PasswordRecovery from './pages/Auth/PasswordRecovery';
-import VerificationKey from './pages/Auth/VerificationKey';
-import ResetPassword from './pages/Auth/ResetPassword';
-import Dashboard from './pages/Dashboard';
+import { AccessLogin } from './pages/Auth/AccessLogin';
+import { SignIn } from './pages/Auth/SignIn';
+import { SignUp } from './pages/Auth/SignUp';
+import { PasswordRecovery } from './pages/Auth/PasswordRecovery';
+import { VerificationKey } from './pages/Auth/VerificationKey';
+import { ResetPassword } from './pages/Auth/ResetPassword';
+import { Dashboard } from './pages/Dashboard';
 
 function App() {
   return (

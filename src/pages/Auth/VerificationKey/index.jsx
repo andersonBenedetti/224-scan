@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import Translator from '@/components/i18n/Translator';
 
-import LoginForm from '@/components/common/LoginForm';
-import FormField from '@/components/common/FormField';
-import Button from '@/components/common/Button';
+import { LoginForm } from '@/components/common/LoginForm';
+import { FormField } from '@/components/common/FormField';
+import { Button } from '@/components/common/Button';
 
 import { Form, ButtonBottom } from './styles';
 
-export default function VerificationKey() {
+export const VerificationKey = () => {
   const [code, setCode] = useState('');
 
   const handleCodeChange = e => {
@@ -44,4 +44,4 @@ export default function VerificationKey() {
       </LoginForm>
     </>
   );
-}
+};

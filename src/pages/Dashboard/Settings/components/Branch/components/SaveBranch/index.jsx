@@ -1,16 +1,13 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useTheme } from 'styled-components';
 
-import FormField from '@/components/common/FormField';
-import Button from '@/components/common/Button';
+import { FormField } from '@/components/common/FormField';
+import { Button } from '@/components/common/Button';
 
 import { Form, ContainerInputs, ContainerButtons } from './styles';
 
-export default function SaveBranch() {
+export const SaveBranch = () => {
   const { t } = useTranslation();
-
-  const theme = useTheme();
 
   const [name, setName] = useState('');
   const [status, setStatus] = useState('');
@@ -108,4 +105,4 @@ export default function SaveBranch() {
       </ContainerButtons>
     </Form>
   );
-}
+};

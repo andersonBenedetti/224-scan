@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import FormField from '@/components/common/FormField';
-import Button from '@/components/common/Button';
+import { FormField } from '@/components/common/FormField';
+import { Button } from '@/components/common/Button';
 
 import { Container, Title, Form, Top } from './styles';
 
-export default function FormProxy() {
+export const FormProxy = () => {
   const { t } = useTranslation();
 
   const [user, setUser] = useState('');
@@ -60,4 +60,4 @@ export default function FormProxy() {
       </Form>
     </Container>
   );
-}
+};

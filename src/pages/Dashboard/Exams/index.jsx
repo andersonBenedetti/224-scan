@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import SearchInput from '@/components/common/SearchInput';
-import NamePatient from './components/NamePatient';
+import { SearchInput } from '@/components/common/SearchInput';
+import { NamePatient } from './components/NamePatient';
 import { ProgressRow, ProgressDetails } from '@/components/common/ProgressRow';
 
 import { Container, Table, Th, Tr, Td } from './styles';
 
-export default function Exams() {
+export const Exams = () => {
   const { t } = useTranslation();
   const [searchValue, setSearchValue] = useState('');
 
@@ -60,4 +60,4 @@ export default function Exams() {
       </Table>
     </Container>
   );
-}
+};

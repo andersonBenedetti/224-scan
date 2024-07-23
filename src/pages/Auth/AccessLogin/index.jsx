@@ -1,9 +1,9 @@
 import { useTranslation } from 'react-i18next';
 
-import LoginForm from '@/components/common/LoginForm';
-import Button from '@/components/common/Button';
+import { LoginForm } from '@/components/common/LoginForm';
+import { Button } from '@/components/common/Button';
 
-export default function AccessLogin() {
+export const AccessLogin = () => {
   const { t } = useTranslation();
 
   return (
@@ -13,4 +13,4 @@ export default function AccessLogin() {
       </LoginForm>
     </>
   );
-}
+};

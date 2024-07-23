@@ -1,14 +1,14 @@
 import { useTranslation } from 'react-i18next';
 
-import Header from '@/components/common/Header';
-import Tabs from '@/components/common/Tabs';
-import Exams from './Exams';
-import LogsError from './LogsError';
-import Settings from './Settings';
+import { Header } from '@/components/common/Header';
+import { Tabs } from '@/components/common/Tabs';
+import { Exams } from './Exams';
+import { LogsError } from './LogsError';
+import { Settings } from './Settings';
 
 import { Container } from './styles';
 
-export default function Dashboard() {
+export const Dashboard = () => {
   const { t } = useTranslation();
 
   const tabsData = [
@@ -23,4 +23,4 @@ export default function Dashboard() {
       <Tabs tabs={tabsData} />
     </Container>
   );
-}
+};

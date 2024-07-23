@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import FormField from '@/components/common/FormField';
-import Button from '@/components/common/Button';
+import { FormField } from '@/components/common/FormField';
+import { Button } from '@/components/common/Button';
 
 import { Form } from './styles';
 
-export default function DicomServer() {
+export const DicomServer = () => {
   const { t } = useTranslation();
 
   const [pasteHere, setPasteHere] = useState('');
@@ -41,4 +41,4 @@ export default function DicomServer() {
       />
     </Form>
   );
-}
+};

@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import FormField from '@/components/common/FormField';
-import Button from '@/components/common/Button';
+import { FormField } from '@/components/common/FormField';
+import { Button } from '@/components/common/Button';
 
 import { Container, Title, Form, Top, Bottom, SubTitle } from './styles';
 
-export default function DicomServer() {
+export const FormIP = () => {
   const { t } = useTranslation();
 
   const [ip, setIp] = useState('');
@@ -107,4 +107,4 @@ export default function DicomServer() {
       </Form>
     </Container>
   );
-}
+};

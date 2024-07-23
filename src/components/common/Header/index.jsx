@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 
-import LogoUser from './components/LogoUser';
+import { LogoUser } from './components/LogoUser';
 import {
   ProgressCircle,
   Progress,
@@ -9,7 +9,7 @@ import {
 
 import { Container, User, Title, Infos } from './styles';
 
-export default function Header() {
+export const Header = () => {
   const { t } = useTranslation();
 
   return (
@@ -30,4 +30,4 @@ export default function Header() {
       </Infos>
     </Container>
   );
-}
+};

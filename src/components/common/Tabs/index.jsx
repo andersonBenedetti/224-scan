@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import { Container, Nav, Item, Text, Content } from './styles';
 
-export default function Tabs({ tabs }) {
+export const Tabs = ({ tabs }) => {
   const [activeTab, setActiveTab] = useState(tabs[0].title);
 
   const handleTabClick = title => {
@@ -28,4 +28,4 @@ export default function Tabs({ tabs }) {
       </Content>
     </Container>
   );
-}
+};

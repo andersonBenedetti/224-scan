@@ -1,8 +1,8 @@
-import Logo from '@/components/common/Logo';
+import { Logo } from '@/components/common/Logo';
 
 import { Container, Polygon, ContainerForm, Title, Text } from './styles';
 
-export default function LoginForm({ title, text, children }) {
+export const LoginForm = ({ title, text, children }) => {
   return (
     <Container>
       <Logo />
@@ -15,4 +15,4 @@ export default function LoginForm({ title, text, children }) {
       </Polygon>
     </Container>
   );
-}
+};

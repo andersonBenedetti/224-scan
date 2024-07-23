@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import LoginForm from '@/components/common/LoginForm';
-import FormField from '@/components/common/FormField';
-import Button from '@/components/common/Button';
+import { LoginForm } from '@/components/common/LoginForm';
+import { FormField } from '@/components/common/FormField';
+import { Button } from '@/components/common/Button';
 
 import { Form, Selects, ButtonBottom } from './styles';
 
-export default function SignUp() {
+export const SignUp = () => {
   const { t } = useTranslation();
 
   const [name, setName] = useState('');
@@ -115,4 +115,4 @@ export default function SignUp() {
       </Form>
     </LoginForm>
   );
-}
+};

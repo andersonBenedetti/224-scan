@@ -1,15 +1,12 @@
 import { useTranslation } from 'react-i18next';
-import { useTheme } from 'styled-components';
 
-import Button from '@/components/common/Button';
-import NamePatient from './components/NamePatient';
+import { Button } from '@/components/common/Button';
+import { NamePatient } from './components/NamePatient';
 
 import { Container, Table, Th, Tr, Td, Reason } from './styles';
 
-export default function LogsError() {
+export const LogsError = () => {
   const { t } = useTranslation();
-
-  const theme = useTheme();
 
   return (
     <Container>
@@ -48,4 +45,4 @@ export default function LogsError() {
       </Table>
     </Container>
   );
-}
+};

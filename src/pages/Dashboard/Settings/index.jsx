@@ -2,13 +2,13 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { LogOutIcon } from '@/components/icons/LogOutIcon';
-import Branch from './components/Branch';
-import DicomServer from './components/DicomServer';
-import Internet from './components/Internet';
+import { Branch } from './components/Branch';
+import { DicomServer } from './components/DicomServer';
+import { Internet } from './components/Internet';
 
 import { Container, Menu, Options, Option, Button, Content } from './styles';
 
-export default function Settings() {
+export const Settings = () => {
   const { t } = useTranslation();
 
   const options = [
@@ -59,4 +59,4 @@ export default function Settings() {
       </Content>
     </Container>
   );
-}
+};

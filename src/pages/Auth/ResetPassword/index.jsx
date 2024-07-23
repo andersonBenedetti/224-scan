@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import LoginForm from '@/components/common/LoginForm';
-import FormField from '@/components/common/FormField';
-import Button from '@/components/common/Button';
+import { LoginForm } from '@/components/common/LoginForm';
+import { FormField } from '@/components/common/FormField';
+import { Button } from '@/components/common/Button';
 
 import { Form } from './styles';
 
-export default function ResetPassword() {
+export const ResetPassword = () => {
   const { t } = useTranslation();
 
   const [password, setPassword] = useState('');
@@ -57,4 +57,4 @@ export default function ResetPassword() {
       </LoginForm>
     </>
   );
-}
+};
