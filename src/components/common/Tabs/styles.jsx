@@ -38,16 +38,6 @@ export const Item = styled.li`
       border-bottom: 2px solid;
       border-color: ${({ theme }) => theme.colors.backgroundDashboard};
     }
-
-    &::before {
-      content: '';
-      width: calc(100% - 3px);
-      height: 2px;
-      background-color: ${({ theme }) => theme.colors.backgroundDashboard};
-      position: absolute;
-      bottom: 0;
-      left: 1.5;
-    }
   }
 `;
 
@@ -75,4 +65,15 @@ export const Content = styled.div`
   border-radius: 0px 10px 10px 10px;
   padding: 20px 0;
   min-height: 65vh;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: ${({ $overlay }) => $overlay.width}px;
+    height: 10px;
+    background: ${({ theme }) => theme.colors.backgroundDashboard};
+    margin-top: -25px;
+    left: ${({ $overlay }) => $overlay.left}px;
+    z-index: 999;
+  }
 `;
