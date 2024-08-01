@@ -7,7 +7,7 @@ import {
   SvgContainer,
 } from './styles';
 
-export const ProgressRow = ({ progressPercentage, children }) => {
+export const ProgressRow = ({ progressPercentage, hasFailed = false, children }) => {
   const safeProgress = Math.max(0, Math.min(100, progressPercentage));
 
   let progressDetailsContent;
@@ -34,7 +34,7 @@ export const ProgressRow = ({ progressPercentage, children }) => {
           </linearGradient>
         </defs>
         <RectOff rx="3.5" />
-        <RectFull rx="3.5" $progress={safeProgress} />
+        <RectFull rx="3.5" $progress={safeProgress} $hasFailed={hasFailed} />
       </SvgContainer>
       {progressDetailsContent}
     </RowContainer>
