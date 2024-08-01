@@ -49,7 +49,7 @@ export const Exams = () => {
               />
             </Td>
             <Td>
-              <ProgressRow progressPercentage={90}>
+              <ProgressRow progressPercentage={90} hasFailed={true} >
                 <ProgressDetails>
                   {t('exams.table.users.1.status')}
                 </ProgressDetails>

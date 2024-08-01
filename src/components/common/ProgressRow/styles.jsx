@@ -19,9 +19,9 @@ export const RectOff = styled.rect`
 `;
 
 export const RectFull = styled.rect`
-  width: ${({ $progress }) => (($progress / 100) * 150) === 0 ? 20 : (($progress / 100) * 150)}px;
+  width: ${({ $progress, $hasFailed }) => $hasFailed ? 20 : (($progress / 100) * 150)}px;
   height: 7px;
-  fill: ${({ $progress, theme }) => $progress === 0 ? theme.colors.error : 'url(#grad2)'};
+  fill: ${({ $hasFailed, theme }) => $hasFailed ? theme.colors.error : 'url(#grad2)'};
   transition: width 0.5s ease; 
 `;
 
