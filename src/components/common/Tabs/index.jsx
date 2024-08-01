@@ -22,8 +22,6 @@ export const Tabs = ({ tabs }) => {
     }
   }, [activeTab]);
 
-  console.log(dimensions);
-
   return (
     <Container>
       <Nav>
