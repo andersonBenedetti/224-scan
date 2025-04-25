@@ -79,19 +79,4 @@ Se você deseja contribuir, fique à vontade para abrir um **pull request** ou s
 
 ---
 
-## 🚀 Futuras Melhorias
-
-- Adicionar suporte a mais idiomas
-- Implementar notificações em tempo real para os usuários
-- Melhorar a interface de visualização de laudos
-
----
-
-## 🔗 Links Úteis
-
-- [Documentação da API](#) (se houver)
-- [Repositório Backend](#) (se houver)
-
----
-
 Desenvolvido com 💙 por [Anderson Benedetti](https://github.com/seu-usuario) e [Leandro Thiago Ribeiro](https://github.com/LeandroTRibeiro)
